@@ -1,0 +1,32 @@
+server:
+  port: 8191
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: spring3-with-ngrok
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    open-in-view: false
+
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          keycloak:
+#            client-id: clientId
+#            client-secret: uuid
+#            scope: openid
+#            authorization-grant-type: authorization_code
+#        provider:
+#          keycloak:
+#            issuer-uri: https://kecloak.com
+#            user-name-attribute: preferred_username
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://kecloak.com
+
+keycloak:
+  enabled: false
